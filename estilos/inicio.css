@@ -1,0 +1,39 @@
+/* Estilo general para la sección de inicio */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assets/fondo6.jfif') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Título principal */
+.hero h1 {
+    font-size: 2.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: #f8f9fa; /* Color de texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
+}
+
+/* Animación al aparecer */
+.hero h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Añade una animación suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
